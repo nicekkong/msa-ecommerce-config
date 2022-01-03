@@ -2,6 +2,9 @@ token:
   expiration_time: 86400000 # (ms) 1day
   secret: user_token
 
+my:
+  email: nicekkong@gmail.com
+
 gateway:
   ip: 192.168.0.6
   
