@@ -3,7 +3,7 @@ token:
   secret: user_token
 
 my:
-  email: default_nicekkong@gmail.com
+  email: dev_nicekkong@gmail.com
 
 gateway:
   ip: 192.168.0.6
