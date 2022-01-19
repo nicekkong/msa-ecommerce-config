@@ -1,0 +1,21 @@
+token:
+  expiration_time: 86400000 # (ms) 1day
+  secret: user_token
+
+my:
+  email: user_service_nicekkong@gmail.com
+  name: '{cipher}AQCR0QOONp37SMFhbn440s4Pxu3zXN3Q9g1Jvecx9P3Fw9b+m6xrUOuf+fCkALD2w56ELWBocyu1Hic3fll0tjUDtFcYrK0EDgUTWHIH/HHUtDxgQ91LV2rbG7lXsAZ3QHiushsg9xoNcITwSbJRQXcNYG6bG4+Vqz1q1kPTs/jZhwkPHqQnhkviaOaIYTsFFQQH1ZRrKQEV/7bUuVI8s+dvysL6+aGV+8gqtFoz8J4mF+S78L4romRQ6IKhI794mMT/0pWrPswW5AZAqiUyAd/IvnUVtjy39p6hdiXl7NYqADLSDE6rKum2KhvW7F4KV1g6ps4R/Iuf+jSOp/GtABLempTF6P738Qen5lNKvIif9u5J/kpoDR853Oz9qROg6xQ='
+
+gateway:
+  ip: 192.168.0.6
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: '{cipher}AQAZzVAkipM7xUntNh441zAv79mnydh1LbQdFvFAbu1woXRvxiZqDhom2f/l6ofW9FbCLT8bQDioVyjh4IvWYZH98J77fSrqFtmMGwVjosZ4wkMHxA0FDpMoh5YbzvRLIhYkorPPZk9ncb8xnDU45eSsMMrZwfAaic1I6H5IMSL+sQpHqulMA2NN4o0gfwo/AZPpDPeqSp2vPve1ItjYUfKBfGoeddZo9zrb+P1zLp6M3hrGvQH5dtMlQtG3lTLPz6ZVWXJaGRtjaWINwI/mM0nhgB2LN2RWSOAAP2aMHNO2vpII9Ai59Zl/Syc+4zP6U5pneUnri4nfsooeA0Fv9ooXDlgEEhFFVJiiTVd3zxn8NM6rXJWgMm8ZPSOKK/7as7M='
+
+order_service:
+  url: http://ORDER-SERVICE/order-service/%s/orders
+  exception:
+    order_is_empty: User's order is empty~
